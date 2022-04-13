@@ -1,5 +1,5 @@
 import React from 'react';
-import { i18n } from 'i18next';
+import { useTranslation } from 'react-i18next';
 import { HiOutlineTranslate } from 'react-icons/hi'
 const lngs = {
     enUS: { source:'https://cdn-icons-png.flaticon.com/128/197/197484.png', nativeName: 'English'},
@@ -7,6 +7,7 @@ const lngs = {
   };
   
   const Changelanguage = () => {
+      const { i18n } = useTranslation();
       const [visibility, setVisibility] = React.useState(false);
       const setTrue = () => setVisibility(true);
       const setFalse = () => setVisibility(false)
