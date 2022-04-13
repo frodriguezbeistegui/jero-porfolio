@@ -1,0 +1,95 @@
+.language{
+    font-size: $default-font-size;
+    position: absolute;
+    z-index: 100;
+    padding: 1.5rem;
+    top: 1rem;
+    right: 2rem;
+    &__popup{
+        height: 100vh;
+        width: 100%;
+        background-color: rgba($color-black, .9);
+        position: fixed;
+        top: 0;
+        left: 0%;
+        z-index: 100000;
+      
+        &--closing-background{
+            display: block;
+            position: relative;
+            width: auto;
+            height: inherit;
+            z-index: 0;
+            top: 0;
+            left: 0;  
+        }
+
+        &--content{
+        @include absCenter;
+        background-color: $color-white;
+        box-shadow: 0 2rem 4rem rgba($color-black,.2);
+        border-radius: 1.5rem;
+        height: 20rem; 
+        width: 20%;
+        @include respond(tab-port){
+            width:40%;
+        }
+       
+        @include respond(phone){
+            width:70%;
+        }
+
+       
+        &-close{
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            font-size: 2.5rem;
+            cursor: pointer;
+            text-decoration: none;
+            z-index: 2000;
+            &:active,
+            &:hover{
+                color: $color-primary;
+            }
+        }
+        &-flag-box{
+            position: relative;
+            display: inline-block;
+            width: 50%;
+            height: 100%;
+        }
+        
+        &-flag{
+            position: absolute;
+            top: 40%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            width: 7rem;
+            border-radius: 50%;
+            box-shadow: 1rem 1.5rem 3rem rgba($color-black, .8);
+            transition: all .3s;
+            &.active-lng{
+                transform: translate(-50%, -50%) scale(1.2);
+                box-shadow: 1.5rem 2rem 3rem rgba($color-black, .8);
+            }
+            &:hover{
+            transform: translate(-50%, -50%) scale(1.2);
+            cursor: pointer;
+            }
+
+
+            &-title{
+                position: absolute;
+                top: 75%;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                &.active-lng{
+                    font-weight: bold;
+                    font-size: 1.8rem;
+                }
+            }
+          }
+        }
+    }
+}

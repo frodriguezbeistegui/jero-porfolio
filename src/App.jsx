@@ -7,9 +7,11 @@ import Tours from './components/Tours.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 import { IconContext } from 'react-icons/lib';
+import Changelanguage from './components/ChangeLanguaje.jsx';
 export default function App() {
   return (
     <IconContext.Provider value={{size: "2.5em"}}>
+    <Changelanguage />
     <Header />
     <main>
     <About />
