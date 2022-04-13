@@ -26,7 +26,7 @@ export default function Footer() {
       </div>
       <div className="col-1-of-2">
         <p className="footer__copyright">
-          {t('buildBy')} <a target="_blank" href="https://github.com/frodriguezbeistegui" className="footer__link">Facundo Rodriguez Beistegui</a>{t('copyRight')}
+          {t('buildBy')} <a target="_blank" rel="noreferrer" href="https://github.com/frodriguezbeistegui" className="footer__link">Facundo Rodriguez Beistegui</a>{t('copyRight')}
         </p>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsWhatsapp, BsInstagram, BsLinkedin, BsMailbox } from "react-icons/bs";
+import { BsWhatsapp, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { FiMail } from 'react-icons/fi'
 
 export default function Contact() {

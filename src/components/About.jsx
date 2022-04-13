@@ -31,17 +31,17 @@ const About = () => {
           <div className="composition">
             <img
               src={img1}
-              alt="photo 1"
+              alt="jero with friends"
               className="composition__photo composition__photo--p1"
             />
             <img
               src={img2}
-              alt="photo 2"
+              alt="jero "
               className="composition__photo composition__photo--p2"
             />
             <img
               src={img3}
-              alt="photo 3"
+              alt="a boats race"
               className="composition__photo composition__photo--p3"
             />
           </div>
