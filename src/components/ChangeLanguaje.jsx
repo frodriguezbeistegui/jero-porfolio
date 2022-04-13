@@ -1,4 +1,5 @@
 import React from 'react';
+import { i18n } from 'i18next';
 import { HiOutlineTranslate } from 'react-icons/hi'
 const lngs = {
     enUS: { source:'https://cdn-icons-png.flaticon.com/128/197/197484.png', nativeName: 'English'},
