@@ -1,5 +1,4 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import { HiOutlineTranslate } from 'react-icons/hi'
 const lngs = {
     enUS: { source:'https://cdn-icons-png.flaticon.com/128/197/197484.png', nativeName: 'English'},
@@ -7,7 +6,6 @@ const lngs = {
   };
   
   const Changelanguage = () => {
-      const { t, i18n } = useTranslation();
       const [visibility, setVisibility] = React.useState(false);
       const setTrue = () => setVisibility(true);
       const setFalse = () => setVisibility(false)
@@ -22,7 +20,7 @@ const lngs = {
                     <a href="#" onClick={setFalse} className="language__popup--content-close">&times;</a>
                             {Object.keys(lngs).map((lng) => (
                                 <div className="language__popup--content-flag-box">
-                                    <img src={lngs[lng].source} className={`language__popup--content-flag ${i18n.resolvedLanguage === lng ? 'active-lng': null}`} key={lng} type="submit" onClick={() => i18n.changeLanguage(lng).then(()=>setFalse())}></img>
+                                    <img alt={lngs[lng].nativeName + 'flag'} src={lngs[lng].source} className={`language__popup--content-flag ${i18n.resolvedLanguage === lng ? 'active-lng': null}`} key={lng} type="submit" onClick={() => i18n.changeLanguage(lng).then(()=>setFalse())}></img>
                                     <p className={ `language__popup--content-flag-title ${i18n.resolvedLanguage === lng ? 'active-lng': null}`} >{lngs[lng].nativeName}</p> 
                                 </div>
                             ))}
