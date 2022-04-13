@@ -19,7 +19,7 @@ const lngs = {
 
                 <div className='language__popup--closing-background' onClick={setFalse}></div>
                 <div className="language__popup--content">
-                    <a href="#" onClick={setFalse} className="language__popup--content-close">&times;</a>
+                    <button href="#" onClick={setFalse} className="language__popup--content-close">&times;</button>
                             {Object.keys(lngs).map((lng) => (
                                 <div className="language__popup--content-flag-box">
                                     <img alt={lngs[lng].nativeName + 'flag'} src={lngs[lng].source} className={`language__popup--content-flag ${i18n.resolvedLanguage === lng ? 'active-lng': null}`} key={lng} type="submit" onClick={() => i18n.changeLanguage(lng).then(()=>setFalse())}></img>

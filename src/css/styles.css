@@ -520,6 +520,8 @@ body {
         .language__popup--content {
           width: 70%; } }
       .language__popup--content-close {
+        border: none;
+        background-color: transparent;
         position: absolute;
         top: 1.5rem;
         right: 1.5rem;
