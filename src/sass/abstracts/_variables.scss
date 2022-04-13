@@ -1,0 +1,36 @@
+// colors
+$color-primary:#4caed2;
+$color-primary-light:#58c0e6;
+$color-primary-dark:#28b4ab;
+
+$color-secondary-light: #ffb700;
+$color-secondary-dark: #df6c00;
+
+$color-tertiary-light: #b041ff;
+$color-tertiary-dark: #4b2e93;
+
+// $color-tertiary-light: #41b0ff;
+// $color-tertiary-dark: #2e4993;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-1: #999;
+$color-grey-dark-2: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+// GRID
+
+$grid-width: 114rem;
+
+$gutter-vertical:8rem;
+$gutter-vertical-small:6rem;
+$gutter-horizontal:6rem;
+
+// font
+$default-font-size: 1.6rem;
+
+$shadow-small: 0 1.5rem 4rem rgba($color-primary-dark, .15)
