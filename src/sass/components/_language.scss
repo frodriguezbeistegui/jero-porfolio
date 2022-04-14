@@ -5,6 +5,12 @@
     padding: 1.5rem;
     top: 1rem;
     right: 2rem;
+
+    &__icon:hover{
+        color: $color-grey-dark-2;
+        
+    }
+
     &__popup{
         height: 100vh;
         width: 100%;

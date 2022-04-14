@@ -126,23 +126,16 @@
         transform: translate(-50%, -50%);
         width: 90%;
         text-align: center;
+        &__heading{
+            color: $color-white;
+        }
+
+        &__details{
+            color: $color-white;
+        }
 
     }
-    &__price-box{
-        text-align: center;
-        color: $color-white;
-        margin-bottom: 8rem;
-    }
-    
-    &__price-only{
-        font-size: 1.4rem;
-        text-transform: uppercase;
-    }
-    
-    &__price-value{
-        font-size: 6rem;
-        font-weight: 100;
-    }
+   
 
     @include respond(tab-port){
         height: auto;  
@@ -174,7 +167,6 @@
         transform: translate(0);
         width: 100%;
         padding: 7rem 4rem 4rem 4rem;
-
     }
     &__price-box{
         margin-bottom: 3rem;

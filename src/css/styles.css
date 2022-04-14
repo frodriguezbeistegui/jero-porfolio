@@ -267,6 +267,9 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s;
   border-radius: 3px; }
+  .contact-box__link {
+    text-decoration: none;
+    color: inherit; }
   @media (max-width: 56.25em) {
     .contact-box {
       padding: 2rem; } }
@@ -367,16 +370,10 @@ body {
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center; }
-  .card__price-box {
-    text-align: center;
-    color: #fff;
-    margin-bottom: 8rem; }
-  .card__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase; }
-  .card__price-value {
-    font-size: 6rem;
-    font-weight: 100; }
+    .card__cta__heading {
+      color: #fff; }
+    .card__cta__details {
+      color: #fff; }
   @media (max-width: 56.25em) {
     .card {
       height: auto;
@@ -487,6 +484,8 @@ body {
   padding: 1.5rem;
   top: 1rem;
   right: 2rem; }
+  .language__icon:hover {
+    color: #333; }
   .language__popup {
     height: 100vh;
     width: 100%;

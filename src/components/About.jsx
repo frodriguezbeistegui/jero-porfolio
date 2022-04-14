@@ -4,7 +4,7 @@ import img1 from "../img/jero-1.jpeg";
 import img2 from "../img/jero-2.jpg";
 import img3 from "../img/jero-3.jpeg";
 
-const About = () => {
+export default function About() {
 
   const { t } = useTranslation();
 
@@ -51,4 +51,3 @@ const About = () => {
   );
 };
 
-export default About;

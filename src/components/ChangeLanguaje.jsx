@@ -13,7 +13,9 @@ const lngs = {
       const setFalse = () => setVisibility(false)
     return (
         <div className='language'>
-            <HiOutlineTranslate  onClick={setTrue} />
+            <span className='language__icon'>
+            <HiOutlineTranslate onClick={setTrue}/>
+            </span>
             {visibility && 
             <div className="language__popup">
 

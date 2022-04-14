@@ -6,6 +6,11 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     transition: transform .3s;
     border-radius: 3px;
+
+    &__link{
+        text-decoration: none;
+        color: inherit;
+    }
     
     @include respond(tab-port){
         padding: 2rem;

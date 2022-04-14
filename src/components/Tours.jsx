@@ -1,8 +1,11 @@
-import { t } from 'i18next'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 
 export default function Tours() {
+
+  const { t } = useTranslation()
+
   return (
     <section className="section-tours" id="section-tours">
     <div className="u-center-text u-margin-bottom-big">
@@ -22,21 +25,26 @@ export default function Tours() {
             </h4>
             <div className="card__details">
               <ul>
-                <li>3 day tour</li>
-                <li>Up to 30 people</li>
-                <li>2 tour guides</li>
-                <li>Sleep in cozy hotels</li>
-                <li>Difficulty: easy</li>
+                <li>{t('yatch')}</li>
+                <li>{t('catamaran')}</li>
+                <li>{t('motorBoat')}</li>
+                <li>{t('sailBoat')}</li>
+                <li>{t('motorBoat')}</li>               
               </ul>
             </div>
           </div>
           <div className="card__side card__side--back card__side--back-1">
             <div className="card__cta">
-              <div className="card__price-box">
-                {/* <p className="card__price-only">Only</p>
-                <p className="card__price-value">$297</p> */}
-              </div>
-              {/* <a href="#popup" className="btn btn--white">Book now!</a> */}
+                <h3 className="card__cta__heading heading-tertiary">Inlcudes</h3>
+                <div className="card__details card__cta__details">
+                <ul>
+                  <li>{t('captainNCrew')}</li>
+                  <li>{t('snorkel')}</li>
+                  <li>{t('foodNDrink')}</li>
+                  <li>{t('paddleBoard')}</li>
+                </ul>
+                </div>
+
             </div>
           </div>
         </div>
@@ -54,21 +62,28 @@ export default function Tours() {
             </h4>
             <div className="card__details">
               <ul>
-                <li>7 day tour</li>
-                <li>Up to 40 people</li>
-                <li>6 tour guides</li>
-                <li>Sleep in provided tents</li>
-                <li>Difficulty: medium</li>
+                <li>{t('yatch')}</li>
+                <li>{t('catamaran')}</li>
+                <li>{t('motorBoat')}</li>
+                <li>{t('sailBoat')}</li>
+                <li>{t('motorBoat')}</li> 
               </ul>
             </div>
           </div>
           <div className="card__side card__side--back card__side--back-2">
             <div className="card__cta">
-              {/* <div className="card__price-box">
-                <p className="card__price-only">Only</p>
-                <p className="card__price-value">$497</p>
-              </div> */}
-              {/* <a href="#popup" className="btn btn--white">Book now!</a> */}
+
+            <h3 className="card__cta__heading heading-tertiary">Inlcudes</h3>
+            <div className="card__details card__cta__details">
+                <ul>
+                  <li>{t('qualifiedSkipper')}</li>
+                  <li>{t('withCrew')}</li>
+                  <li>{t('NMNavigated')}</li>
+                  <li>{t('area')}</li>
+                  <li>{t('optional')}</li>
+                </ul>
+            </div>
+              
             </div>
           </div>
         </div>
@@ -86,21 +101,28 @@ export default function Tours() {
           </h4>
           <div className="card__details">
             <ul>
-              <li>5 day tours</li>
-              <li>Up to 15 people</li>
-              <li>3 tour guides</li>
-              <li>Sleep in provided tents</li>
-              <li>Difficulty: hard</li>
+              <li>{t('yatch')}</li>
+              <li>{t('catamaran')}</li>
+              <li>{t('motorBoat')}</li>
+              <li>{t('sailBoat')}</li>
+              <li>{t('motorBoat')}</li> 
             </ul>
           </div>
         </div>
         <div className="card__side card__side--back card__side--back-3">
           <div className="card__cta">
-            {/* <div className="card__price-box">
-              <p className="card__price-only">Only</p>
-              <p className="card__price-value">$897</p>
-            </div> */}
-            {/* <a href="#contact" className="btn btn--white">Book now!</a> */}
+
+          <h3 className="card__cta__heading heading-tertiary">Inlcudes</h3>
+          <div className="card__details card__cta__details">
+                <ul>
+                  <li>{t('deckCleaning')}</li>
+                  <li>{t('deepCleaning')}</li>
+                  <li>{t('engineCheck')}</li>
+                  <li>{t('generalFixes')}</li>
+                  <li>{t('bilgeDrain')}</li>
+                  <li>{t('others')}</li>
+                </ul>
+            </div>
           </div>
         </div>
       </div>

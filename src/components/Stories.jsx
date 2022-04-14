@@ -1,18 +1,21 @@
 import React from 'react';
 import bgVideo from '../img/video.mp4'
-// import bgVideoWeb from '../img/video.webm'
+import bgVideoWeb from '../img/video.webm'
 import person1 from '../img/nat-8.jpg'
 import person2 from '../img/nat-9.jpg'
-import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 
-const Stories = () => {
+export default function Stories() {
+
+  const { t } = useTranslation()
+
     return (
         <section className="section-stories">
 
       <div className="bg-video">
         <video className="bg-video__content" id='video' autoplay muted loop>
           <source src={bgVideo} type="video/mp4" />
-          {/* <source src={bgVideoWeb} /> */}
+          <source src={bgVideoWeb} />
           Your browser is not supported!
         </video>
       </div>
@@ -34,7 +37,7 @@ const Stories = () => {
                 I had the best week with my family
               </h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem vero deleniti nobis accusantium, quisquam rem placeat repudiandae. Consequuntur, nostrum vel? Voluptas totam natus recusandae, ducimus blanditiis dicta eveniet ullam nostrum?
+                  {t('testimonyContent1')}
               </p>
             </div>
           </div>
@@ -51,7 +54,7 @@ const Stories = () => {
               WOW! My life is completly different now!
             </h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem vero deleniti nobis accusantium, quisquam rem placeat repudiandae. Consequuntur, nostrum vel? Voluptas totam natus recusandae, ducimus blanditiis dicta eveniet ullam nostrum?
+              {t('testimonyContent2')}
             </p>
           </div>
         </div>
@@ -61,4 +64,3 @@ const Stories = () => {
     );
 }
 
-export default Stories;
