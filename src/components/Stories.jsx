@@ -34,7 +34,7 @@ export default function Stories() {
             </figure>
             <div className="story__text">
               <h3 className="heading-tertiary u-margin-bottom-small">
-                I had the best week with my family
+                {t('testimonyTitle1')}
               </h3>
               <p>
                   {t('testimonyContent1')}
@@ -51,7 +51,7 @@ export default function Stories() {
           </figure>
           <div className="story__text">
             <h3 className="heading-tertiary u-margin-bottom-small">
-              WOW! My life is completly different now!
+              {t('testimonyTitle2')}
             </h3>
             <p>
               {t('testimonyContent2')}

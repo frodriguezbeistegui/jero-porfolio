@@ -27,15 +27,15 @@ export default function Tours() {
               <ul>
                 <li>{t('yatch')}</li>
                 <li>{t('catamaran')}</li>
-                <li>{t('motorBoat')}</li>
                 <li>{t('sailBoat')}</li>
-                <li>{t('motorBoat')}</li>               
+                <li>{t('motorBoat')}</li>
+                <li>{t('others')}</li>               
               </ul>
             </div>
           </div>
           <div className="card__side card__side--back card__side--back-1">
             <div className="card__cta">
-                <h3 className="card__cta__heading heading-tertiary">Inlcudes</h3>
+                <h3 className="card__cta__heading heading-tertiary">{t('includes')}</h3>
                 <div className="card__details card__cta__details">
                 <ul>
                   <li>{t('captainNCrew')}</li>
@@ -64,16 +64,16 @@ export default function Tours() {
               <ul>
                 <li>{t('yatch')}</li>
                 <li>{t('catamaran')}</li>
-                <li>{t('motorBoat')}</li>
                 <li>{t('sailBoat')}</li>
-                <li>{t('motorBoat')}</li> 
+                <li>{t('motorBoat')}</li>
+                <li>{t('others')}</li> 
               </ul>
             </div>
           </div>
           <div className="card__side card__side--back card__side--back-2">
             <div className="card__cta">
 
-            <h3 className="card__cta__heading heading-tertiary">Inlcudes</h3>
+            <h3 className="card__cta__heading heading-tertiary">{t('includes')}</h3>
             <div className="card__details card__cta__details">
                 <ul>
                   <li>{t('qualifiedSkipper')}</li>
@@ -103,16 +103,16 @@ export default function Tours() {
             <ul>
               <li>{t('yatch')}</li>
               <li>{t('catamaran')}</li>
-              <li>{t('motorBoat')}</li>
               <li>{t('sailBoat')}</li>
-              <li>{t('motorBoat')}</li> 
+              <li>{t('motorBoat')}</li>
+              <li>{t('others')}</li> 
             </ul>
           </div>
         </div>
         <div className="card__side card__side--back card__side--back-3">
           <div className="card__cta">
 
-          <h3 className="card__cta__heading heading-tertiary">Inlcudes</h3>
+          <h3 className="card__cta__heading heading-tertiary">{t('includes')}</h3>
           <div className="card__details card__cta__details">
                 <ul>
                   <li>{t('deckCleaning')}</li>
