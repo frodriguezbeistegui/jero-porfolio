@@ -13,9 +13,9 @@ export default function Stories() {
         <section className="section-stories">
 
       <div className="bg-video">
-        <video className="bg-video__content" id='video' autoplay muted loop>
+        <video className="bg-video__content" id='video' autoPlay muted loop>
           <source src={bgVideo} type="video/mp4" />
-          <source src={bgVideoWeb} />
+          <source src={bgVideoWeb} type="video/webm" />
           Your browser is not supported!
         </video>
       </div>
