@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './components/Header.jsx'
-import './css/styles.css';
+import './css/style.css';
 import About from './components/About.jsx'
 import Stories from './components/Stories.jsx';
 import Tours from './components/Tours.jsx';
