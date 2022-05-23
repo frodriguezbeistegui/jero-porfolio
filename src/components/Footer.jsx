@@ -1,5 +1,8 @@
 import React from 'react'
+
 import { useTranslation } from 'react-i18next'
+
+import logo from "../img/logo.png"
 
 
 export default function Footer() {
@@ -9,8 +12,7 @@ export default function Footer() {
   return (
     <footer className="footer" id="footer">
     <div className="footer__logo-box">
-
-     
+    <img alt="Full logo" class="footer__logo" src={logo}/>
     </div>
     <div className="row">
       <div className="col-1-of-2">
